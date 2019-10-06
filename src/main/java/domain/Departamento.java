@@ -7,7 +7,7 @@ public class Departamento extends Inmueble {
     }
 
     @Override
-    public void calcularPrecio(){
+    protected void calcularPrecio(){
         this.precio = plus() + this.cantidadAmbientes * 350000;
     }
 }

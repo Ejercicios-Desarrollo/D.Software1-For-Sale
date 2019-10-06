@@ -3,6 +3,7 @@ package domain;
 public abstract class EstadoOperacion {
 
     protected Cliente cliente;
+    protected Empleado empleado;
 
     public EstadoOperacion(){
 

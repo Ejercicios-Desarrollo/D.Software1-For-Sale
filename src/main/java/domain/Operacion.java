@@ -3,6 +3,7 @@ package domain;
 public abstract class Operacion {
     private EstadoOperacion estadoOperacion;
     private Inmueble inmueble;
+
     public Operacion(){
         this.estadoOperacion = new NoReservado();
     }

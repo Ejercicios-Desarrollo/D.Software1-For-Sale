@@ -9,7 +9,7 @@ public class Casa extends Inmueble {
     }
 
     @Override
-    public void calcularPrecio(){
+    protected void calcularPrecio(){
         this.precio += plus();
     }
 }

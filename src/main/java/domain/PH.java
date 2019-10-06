@@ -7,7 +7,7 @@ public class PH extends Inmueble {
     }
 
     @Override
-    public void calcularPrecio(){
+    protected void calcularPrecio(){
       double precioBase = 500000;
       double precioPorMetro = 14000;
       this.precio = plus() + this.metrosCuadrados * precioPorMetro + precioBase;

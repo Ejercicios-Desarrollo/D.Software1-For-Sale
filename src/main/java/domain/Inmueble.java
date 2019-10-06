@@ -10,7 +10,7 @@ public abstract class Inmueble {
     protected Inmueble(int metrosCuadrados, int cantidadAmbientes){
         this.metrosCuadrados = metrosCuadrados;
         this.cantidadAmbientes = cantidadAmbientes;
-        calcularPrecio();
+        this.calcularPrecio();
     }
 
     public Zona getZona() {
@@ -34,17 +34,17 @@ public abstract class Inmueble {
         return this.zona.getPlus();
     }
 
-    public void calcularPrecio(){
+    protected void calcularPrecio(){
 
     }
 
-    public boolean estaAsignadoACliente(Cliente unCliente){
-        boolean estaAsignado;
+    public boolean estaReservadoPorCliente(Cliente unCliente){
+        boolean estaReservado;
         if(this.operacion.getEstadoOperacion().cliente == unCliente){
-            estaAsignado = true;
+            estaReservado = true;
         }
-        else estaAsignado = false;
+        else estaReservado = false;
 
-        return estaAsignado;
+        return estaReservado;
     }
 }
