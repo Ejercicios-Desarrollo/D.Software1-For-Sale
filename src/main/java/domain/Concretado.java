@@ -6,7 +6,13 @@ public class Concretado extends EstadoOperacion {
 
     }
 
+    @Override
     public void reservar(Cliente unCliente, Empleado unEmpleado, Inmueble unInmueble){
+
+    }
+
+    @Override
+    public void concretar(Cliente unCliente, Empleado unEmpleado, Inmueble unInmueble){
 
     }
 
