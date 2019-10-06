@@ -2,8 +2,8 @@ package domain;
 
 public class PH extends Inmueble {
 
-    public PH(int metrosCuadrados, int cantidadAmbientes){
-        super(metrosCuadrados,cantidadAmbientes);
+    public PH(int metrosCuadrados, int cantidadAmbientes, Zona zona){
+        super(metrosCuadrados,cantidadAmbientes, zona);
     }
 
     @Override

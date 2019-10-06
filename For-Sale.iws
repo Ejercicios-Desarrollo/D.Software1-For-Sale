@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc4fbe39-72df-4648-88b2-5d0727d13bba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/For-Sale.iml" beforeDir="false" afterPath="$PROJECT_DIR$/For-Sale.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/For-Sale.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/For-Sale.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/For-Sale.iws" beforeDir="false" afterPath="$PROJECT_DIR$/For-Sale.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/EstadoOperacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/EstadoOperacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Operacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Operacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Casa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Departamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/PH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/PH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Zona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/ForSaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/ForSaleTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,9 +173,8 @@
   <component name="EjbViewSettings">
     <EjbView showMembers="false" autoscrollToSource="false" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="HIDE_WARNINGS" value="false" />
+  <component name="FavoritesManager">
+    <favorites_list name="For-Sale" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -277,6 +282,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ForSaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="For-Sale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.ForSaleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -288,6 +313,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ForSaleTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="StarteamConfiguration">
     <option name="SERVER" value="" />

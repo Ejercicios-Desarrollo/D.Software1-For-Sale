@@ -2,8 +2,8 @@ package domain;
 
 public class Departamento extends Inmueble {
 
-    public Departamento(int metrosCuadrados, int cantidadAmbientes){
-        super(metrosCuadrados,cantidadAmbientes);
+    public Departamento(int metrosCuadrados, int cantidadAmbientes, Zona zona){
+        super(metrosCuadrados,cantidadAmbientes, zona);
     }
 
     @Override

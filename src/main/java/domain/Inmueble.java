@@ -7,9 +7,10 @@ public abstract class Inmueble {
     protected Operacion operacion;
     protected double precio;
 
-    protected Inmueble(int metrosCuadrados, int cantidadAmbientes){
+    protected Inmueble(int metrosCuadrados, int cantidadAmbientes, Zona zona){
         this.metrosCuadrados = metrosCuadrados;
         this.cantidadAmbientes = cantidadAmbientes;
+        this.zona = zona;
         this.calcularPrecio();
     }
 
