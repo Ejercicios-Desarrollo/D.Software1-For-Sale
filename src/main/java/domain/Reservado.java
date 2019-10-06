@@ -14,8 +14,8 @@ public class Reservado extends EstadoOperacion {
     @Override
     public void concretar(Cliente unCliente, Empleado unEmpleado, Inmueble unInmueble){
         if(unInmueble.estaReservadoPorCliente(unCliente)){
-            this.empleado = unEmpleado;
             unInmueble.operacion.setEstadoOperacion(new Concretado());
+            unInmueble.operacion.getEstadoOperacion().empleado = unEmpleado;
             unEmpleado.agregarOperacion(unInmueble.getOperacion());
             unEmpleado.aumentarOperacionesConcretadas();
         }

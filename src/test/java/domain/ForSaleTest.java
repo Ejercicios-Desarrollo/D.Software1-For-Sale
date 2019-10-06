@@ -55,6 +55,7 @@ public class ForSaleTest {
     private Alquiler alquiler_ph_urquiza;
     private Alquiler alquiler_ph_belgrano;
 
+    private Empleados listaEmpleados;
 
     @Before
     public void init(){
@@ -89,6 +90,11 @@ public class ForSaleTest {
         this.empleado1 = new Empleado("Juan");
         this.empleado2 = new Empleado("Carla");
         this.empleado3 = new Empleado("Diego");
+
+        this.listaEmpleados = new Empleados();
+        this.listaEmpleados.agregarEmpleado(empleado1);
+        this.listaEmpleados.agregarEmpleado(empleado2);
+        this.listaEmpleados.agregarEmpleado(empleado3);
 
         //Clientes
         this.cliente1 = new Cliente("Tomas");
@@ -141,5 +147,40 @@ public class ForSaleTest {
         Assert.assertEquals(254.88, empleado2.getComisiones(), 0);
         cliente6.concretarOperacion(empleado3, ph_caballito);
         Assert.assertEquals(37125, empleado3.getComisiones(), 0);
+    }
+
+    @Test
+    public void mejoresEmpleadosTest(){
+        cliente1.solicitarReserva(empleado1, depto_almagro);
+        cliente2.concretarOperacion(empleado1, ph_caballito);
+        cliente3.concretarOperacion(empleado1, depto_almagro);
+
+        cliente4.solicitarReserva(empleado2, depto_urquiza);
+        cliente4.solicitarReserva(empleado2, depto_almagro);
+        cliente6.solicitarReserva(empleado2, depto_caballito);
+
+
+        cliente5.concretarOperacion(empleado3, ph_urquiza);
+        cliente5.concretarOperacion(empleado3, ph_belgrano);
+        cliente4.concretarOperacion(empleado3, depto_urquiza);
+        cliente4.concretarOperacion(empleado3, depto_almagro);
+        cliente4.concretarOperacion(empleado3, depto_caballito);
+
+        Assert.assertEquals(empleado1, listaEmpleados.mejorEmpleadoSegunComisiones());
+        Assert.assertEquals(empleado2, listaEmpleados.mejorEmpleadoSegunCantidadReservas());
+        Assert.assertEquals(empleado3, listaEmpleados.mejorEmpleadoSegunOperacionesCerradas());
+    }
+
+
+    @Test
+    public void empleadoTieneProblemasConOtroTest(){
+        cliente1.solicitarReserva(empleado1, casa_belgrano);
+        cliente1.concretarOperacion(empleado2, casa_belgrano);
+        Assert.assertEquals(true, empleado1.hayProblemasCon(empleado2));
+
+        cliente6.solicitarReserva(empleado2, depto_urquiza);
+        cliente6.concretarOperacion(empleado2, depto_urquiza);
+        cliente6.concretarOperacion(empleado3, depto_caballito);
+        Assert.assertEquals(false, empleado2.hayProblemasCon(empleado3));
     }
 }

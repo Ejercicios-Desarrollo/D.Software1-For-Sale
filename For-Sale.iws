@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc4fbe39-72df-4648-88b2-5d0727d13bba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/For-Sale.iml" beforeDir="false" afterPath="$PROJECT_DIR$/For-Sale.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/For-Sale.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/For-Sale.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/For-Sale.iws" beforeDir="false" afterPath="$PROJECT_DIR$/For-Sale.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Casa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Departamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/PH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/PH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Zona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/NoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/NoReservado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Reservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Reservado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/domain/ForSaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/ForSaleTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
