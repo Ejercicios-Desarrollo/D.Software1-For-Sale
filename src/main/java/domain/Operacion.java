@@ -27,4 +27,8 @@ public abstract class Operacion {
     public void setInmueble(Inmueble inmueble) {
         this.inmueble = inmueble;
     }
+
+    public Empleado getUltimoEmpleado(){
+        return this.estadoOperacion.getEmpleado();
+    }
 }

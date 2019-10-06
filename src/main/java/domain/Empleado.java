@@ -54,4 +54,8 @@ public class Empleado {
     public int getOperacionesConcretadas() {
         return operacionesConcretadas;
     }
+
+    public boolean hayProblemasCon(Empleado unEmpleado){
+        return this.operaciones.stream().anyMatch(o -> o.getUltimoEmpleado() == unEmpleado);
+    }
 }

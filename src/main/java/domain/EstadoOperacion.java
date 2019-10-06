@@ -15,4 +15,8 @@ public abstract class EstadoOperacion {
 
     public void concretar(Cliente unCliente, Empleado unEmpleado, Inmueble unInmueble){
     }
+
+    public Empleado getEmpleado() {
+        return empleado;
+    }
 }
