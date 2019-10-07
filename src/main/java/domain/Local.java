@@ -14,7 +14,7 @@ public class Local extends Casa{
         super.calcularPrecio();
     }
 
-    public void remodelarLocal(TipoLocal tipoLocal) {
+    public void remodelarLocal() {
         this.tipoLocal.remodelar(this);
         this.calcularPrecio();
     }
