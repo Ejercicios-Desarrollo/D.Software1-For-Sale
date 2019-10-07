@@ -1,7 +1,7 @@
 package domain;
 
 public class Zona {
-    private float plus;
+    private double plus;
     private String nombre;
 
     public Zona (float plus, String nombre){
@@ -9,7 +9,7 @@ public class Zona {
         this.nombre = nombre;
     }
 
-    public float getPlus() {
+    public double getPlus() {
         return plus;
     }
 }
