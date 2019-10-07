@@ -31,4 +31,16 @@ public abstract class Operacion {
     public Empleado getUltimoEmpleado(){
         return this.estadoOperacion.getEmpleado();
     }
+
+    public boolean reservadoPor(Cliente unCliente){
+        return this.getEstadoOperacion().getCliente() == unCliente;
+    }
+
+    public void concretarPor(Empleado unEmpleado, Cliente unCliente){
+        this.estadoOperacion.concretar(unCliente, unEmpleado, this.inmueble);
+    }
+
+    public void reservarPor(Empleado unEmpleado, Cliente unCliente){
+        this.estadoOperacion.reservar(unCliente, unEmpleado, this.inmueble);
+    }
 }

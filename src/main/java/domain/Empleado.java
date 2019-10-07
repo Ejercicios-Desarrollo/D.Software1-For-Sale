@@ -2,6 +2,8 @@ package domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Empleado {
     private String nombre;
@@ -18,9 +20,13 @@ public class Empleado {
         this.operaciones = new ArrayList<>();
     }
 
-    public void concretarOperacion(Inmueble inmueble, Cliente cliente){
-        inmueble.operacion.getEstadoOperacion().concretar(cliente, this, inmueble);
+    public void concretarOperacion(Inmueble inmueble, Cliente unCliente){
+        inmueble.concretarOperacion(this, unCliente);
         comisiones += cobrarComision(inmueble);
+    }
+
+    public void reservarOperacion(Inmueble inmueble, Cliente unCliente){
+        inmueble.reservarOperacion(this, unCliente);
     }
 
     public void agregarOperacion(Operacion unaOperacion){
@@ -29,10 +35,6 @@ public class Empleado {
 
     public double cobrarComision(Inmueble inmueble){
         return inmueble.operacion.calcularComision();
-    }
-
-    public void reservarOperacion(Inmueble inmueble, Cliente cliente){
-        inmueble.operacion.getEstadoOperacion().reservar(cliente, this, inmueble);
     }
 
     public void aumentarCantidadReservas(){
@@ -56,6 +58,8 @@ public class Empleado {
     }
 
     public boolean hayProblemasCon(Empleado unEmpleado){
-        return this.operaciones.stream().anyMatch(o -> o.getUltimoEmpleado() == unEmpleado);
+        Predicate<Operacion> filtro = opEsteEmpleado -> unEmpleado.operaciones.stream().anyMatch(opOtroEmpleado -> opOtroEmpleado.getInmueble().getZona() == opEsteEmpleado.getInmueble().getZona());
+        List<Operacion> operacionesEnMismaZona = this.operaciones.stream().filter(filtro).collect(Collectors.toList());
+        return operacionesEnMismaZona.stream().anyMatch(o -> o.getUltimoEmpleado() == unEmpleado);
     }
 }

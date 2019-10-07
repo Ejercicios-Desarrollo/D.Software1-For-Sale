@@ -2,8 +2,9 @@ package domain;
 
 public class Concretado extends EstadoOperacion {
 
-    public Concretado(){
-
+    public Concretado(Cliente unCliente, Empleado unEmpleado){
+        this.cliente = unCliente;
+        this.empleado = unEmpleado;
     }
 
     @Override

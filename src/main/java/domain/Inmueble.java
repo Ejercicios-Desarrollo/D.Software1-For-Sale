@@ -31,6 +31,18 @@ public abstract class Inmueble {
         operacion.setInmueble(this);
     }
 
+    public void cambiarEstadoOperacion(EstadoOperacion estadoOperacion){
+        this.operacion.setEstadoOperacion(estadoOperacion);
+    }
+
+    public void concretarOperacion(Empleado unEmpleado, Cliente unCliente){
+        this.operacion.concretarPor(unEmpleado, unCliente);
+    }
+
+    public void reservarOperacion(Empleado unEmpleado, Cliente unCliente){
+        this.operacion.reservarPor(unEmpleado, unCliente);
+    }
+
     public double plus(){
         return this.zona.getPlus();
     }
@@ -41,7 +53,7 @@ public abstract class Inmueble {
 
     public boolean estaReservadoPorCliente(Cliente unCliente){
         boolean estaReservado;
-        if(this.operacion.getEstadoOperacion().cliente == unCliente){
+        if(this.operacion.reservadoPor(unCliente)){
             estaReservado = true;
         }
         else estaReservado = false;

@@ -19,4 +19,8 @@ public abstract class EstadoOperacion {
     public Empleado getEmpleado() {
         return empleado;
     }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
 }

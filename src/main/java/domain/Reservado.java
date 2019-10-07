@@ -2,8 +2,9 @@ package domain;
 
 public class Reservado extends EstadoOperacion {
 
-    public Reservado(){
-
+    public Reservado(Cliente unCliente, Empleado unEmpleado){
+        this.cliente = unCliente;
+        this.empleado = unEmpleado;
     }
 
     @Override
@@ -14,8 +15,7 @@ public class Reservado extends EstadoOperacion {
     @Override
     public void concretar(Cliente unCliente, Empleado unEmpleado, Inmueble unInmueble){
         if(unInmueble.estaReservadoPorCliente(unCliente)){
-            unInmueble.operacion.setEstadoOperacion(new Concretado());
-            unInmueble.operacion.getEstadoOperacion().empleado = unEmpleado;
+            unInmueble.cambiarEstadoOperacion(new Concretado(unCliente, unEmpleado));
             unEmpleado.agregarOperacion(unInmueble.getOperacion());
             unEmpleado.aumentarOperacionesConcretadas();
         }
