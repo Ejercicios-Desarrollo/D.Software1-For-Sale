@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc4fbe39-72df-4648-88b2-5d0727d13bba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Galpon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Local.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/LocalALaCalle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/TipoLocal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/For-Sale.iws" beforeDir="false" afterPath="$PROJECT_DIR$/For-Sale.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Concretado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Concretado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/EstadoOperacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/EstadoOperacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Casa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/NoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/NoReservado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Operacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Operacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Reservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Reservado.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,6 +176,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

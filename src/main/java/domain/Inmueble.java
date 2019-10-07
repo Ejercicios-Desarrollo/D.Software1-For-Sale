@@ -14,6 +14,14 @@ public abstract class Inmueble {
         this.calcularPrecio();
     }
 
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
     public Zona getZona() {
         return zona;
     }
